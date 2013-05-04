@@ -1,11 +1,3 @@
-//
-//  AppDelegate.m
-//  Splender
-//
-//  Created by Michael England on 04/05/2013.
-//  Copyright (c) 2013 Michael England. All rights reserved.
-//
-
 #import "AppDelegate.h"
 
 #import "ViewController.h"

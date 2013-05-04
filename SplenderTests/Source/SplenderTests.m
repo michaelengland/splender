@@ -1,11 +1,3 @@
-//
-//  SplenderTests.m
-//  SplenderTests
-//
-//  Created by Michael England on 04/05/2013.
-//  Copyright (c) 2013 Michael England. All rights reserved.
-//
-
 #import "SplenderTests.h"
 
 @implementation SplenderTests
