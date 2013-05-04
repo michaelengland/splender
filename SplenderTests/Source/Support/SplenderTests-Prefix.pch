@@ -6,4 +6,5 @@
 
 #ifdef __OBJC__
 #import "Splender-Prefix.pch"
+#import "Kiwi.h"
 #endif

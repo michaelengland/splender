@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		298F56EA97B14894A489BC63 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 67AB1C1773584A298CB70C0B /* libPods.a */; };
+		31CDFF0F0CE94C6BBE4A9356 /* libPods-SplenderTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A9208DB1FBC94D8796A5E3EB /* libPods-SplenderTests.a */; };
 		5BA1701817353F9800088115 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BA1701117353F9800088115 /* AppDelegate.m */; };
 		5BA1701917353F9800088115 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BA1701317353F9800088115 /* main.m */; };
 		5BA1701A17353F9800088115 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BA1701717353F9800088115 /* ViewController.m */; };
@@ -49,7 +50,6 @@
 		5BA1702217353FD700088115 /* Splender-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Splender-Info.plist"; sourceTree = "<group>"; };
 		5BA1702417353FD700088115 /* ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
 		5BA1702C1735475F00088115 /* SplenderTests-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "SplenderTests-Info.plist"; sourceTree = "<group>"; };
-		5BA1702F1735476800088115 /* SplenderTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SplenderTests.h; sourceTree = "<group>"; };
 		5BA170301735476800088115 /* SplenderTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SplenderTests.m; sourceTree = "<group>"; };
 		5BA17033173547C800088115 /* SplenderTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SplenderTests-Prefix.pch"; sourceTree = "<group>"; };
 		5BEC2D741735339F00B97B9B /* Splender.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Splender.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -60,6 +60,8 @@
 		5BEC2D9B1735339F00B97B9B /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		67AB1C1773584A298CB70C0B /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		81E34B23CA8542CB9C8EEB58 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
+		A9208DB1FBC94D8796A5E3EB /* libPods-SplenderTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SplenderTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E770843F28944BC4B97937ED /* Pods-SplenderTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SplenderTests.xcconfig"; path = "Pods/Pods-SplenderTests.xcconfig"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +83,7 @@
 				5BEC2D9C1735339F00B97B9B /* SenTestingKit.framework in Frameworks */,
 				5BEC2D9D1735339F00B97B9B /* UIKit.framework in Frameworks */,
 				5BEC2D9E1735339F00B97B9B /* Foundation.framework in Frameworks */,
+				31CDFF0F0CE94C6BBE4A9356 /* libPods-SplenderTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -164,7 +167,6 @@
 		5BA1702E1735476800088115 /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				5BA1702F1735476800088115 /* SplenderTests.h */,
 				5BA170301735476800088115 /* SplenderTests.m */,
 				5BA170311735476800088115 /* Support */,
 			);
@@ -187,6 +189,7 @@
 				5BEC2D761735339F00B97B9B /* Frameworks */,
 				5BEC2D751735339F00B97B9B /* Products */,
 				81E34B23CA8542CB9C8EEB58 /* Pods.xcconfig */,
+				E770843F28944BC4B97937ED /* Pods-SplenderTests.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -207,6 +210,7 @@
 				5BEC2D7B1735339F00B97B9B /* CoreGraphics.framework */,
 				5BEC2D9B1735339F00B97B9B /* SenTestingKit.framework */,
 				67AB1C1773584A298CB70C0B /* libPods.a */,
+				A9208DB1FBC94D8796A5E3EB /* libPods-SplenderTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -255,10 +259,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5BEC2DAF173533A000B97B9B /* Build configuration list for PBXNativeTarget "SplenderTests" */;
 			buildPhases = (
+				183BDBBEBA5442AF9CF2068F /* Check Pods Manifest.lock */,
 				5BEC2D951735339F00B97B9B /* Sources */,
 				5BEC2D961735339F00B97B9B /* Frameworks */,
 				5BEC2D971735339F00B97B9B /* Resources */,
 				5BEC2D981735339F00B97B9B /* ShellScript */,
+				6A020AFE76F542B4A73ED080 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -320,6 +326,20 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		183BDBBEBA5442AF9CF2068F /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+		};
 		559B62855000425E9756A6CC /* Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -346,6 +366,20 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+		6A020AFE76F542B4A73ED080 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-SplenderTests-resources.sh\"\n";
 		};
 		DCB1ABEE588640D78B4F7797 /* Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -488,12 +522,9 @@
 		};
 		5BEC2DB0173533A000B97B9B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E770843F28944BC4B97937ED /* Pods-SplenderTests.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Splender.app/Splender";
-				FRAMEWORK_SEARCH_PATHS = (
-					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
-					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
-				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SplenderTests/Source/Support/SplenderTests-Prefix.pch";
 				INFOPLIST_FILE = "SplenderTests/Resources/SplenderTests-Info.plist";
@@ -505,12 +536,9 @@
 		};
 		5BEC2DB1173533A000B97B9B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E770843F28944BC4B97937ED /* Pods-SplenderTests.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Splender.app/Splender";
-				FRAMEWORK_SEARCH_PATHS = (
-					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
-					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
-				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SplenderTests/Source/Support/SplenderTests-Prefix.pch";
 				INFOPLIST_FILE = "SplenderTests/Resources/SplenderTests-Info.plist";

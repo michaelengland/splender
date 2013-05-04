@@ -1,10 +1,13 @@
 PODS:
   - Facebook-iOS-SDK (3.5.1)
+  - Kiwi (2.0.6)
 
 DEPENDENCIES:
   - Facebook-iOS-SDK
+  - Kiwi
 
 SPEC CHECKSUMS:
   Facebook-iOS-SDK: 0dbd897e842cefeb012ec2eb8eba659ba6b96b12
+  Kiwi: 56082a80f942de4d10423d8d8a599ab30cf50228
 
 COCOAPODS: 0.19.1

@@ -1,24 +1,11 @@
-#import "SplenderTests.h"
+SPEC_BEGIN(MathSpec)
 
-@implementation SplenderTests
+describe(@"Math", ^{
+    it(@"is pretty cool", ^{
+        NSUInteger a = 16;
+        NSUInteger b = 26;
+        [[theValue(a + b) should] equal:theValue(43)];
+    });
+});
 
-- (void)setUp
-{
-    [super setUp];
-    
-    // Set-up code here.
-}
-
-- (void)tearDown
-{
-    // Tear-down code here.
-    
-    [super tearDown];
-}
-
-- (void)testExample
-{
-    STFail(@"Unit tests are not implemented yet in SplenderTests");
-}
-
-@end
+SPEC_END
